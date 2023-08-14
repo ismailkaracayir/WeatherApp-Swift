@@ -10,9 +10,8 @@ import UIKit
 struct CurrentWeather{
     let description : String
     let status : String
-    let degree : Double
-    let night : String
-    let humidity : Double
+    let degree : Double // derece
+    let humidity : Double //nem
 }
 extension CurrentWeather {
     
