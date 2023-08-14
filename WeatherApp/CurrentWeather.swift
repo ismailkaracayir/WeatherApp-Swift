@@ -12,9 +12,15 @@ struct CurrentWeather{
     let status : String
     let degree : Double // derece
     let humidity : Double //nem
+    
+    init(description: String, status: String, degree: Double, humidity: Double) {
+        self.description = description
+        self.status = status
+        self.degree = degree
+        self.humidity = humidity
+    }
 }
 extension CurrentWeather {
-    
     var iconImage : UIImage {
         switch status {
         case "Clear":

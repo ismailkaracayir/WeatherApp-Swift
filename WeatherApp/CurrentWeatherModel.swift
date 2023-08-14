@@ -19,8 +19,8 @@ struct CurrentWaetherModel{
     init(data: CurrentWeather) {
         self.description = data.description
         self.status = data.status
-        self.degree = "\(data.degree)%"
-        self.humidity = "\(data.humidity)%"
+        self.degree = "\(Int(data.degree))°"
+        self.humidity = "\(Int(data.humidity))%"
         self.iconImage = data.iconImage
     }
 }
